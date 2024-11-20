@@ -1,0 +1,61 @@
+%YAML:1.0
+---
+#--------------------------------------------------------------------------------------------
+# Camera Parameters
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV format)
+Camera.fx: 600.0
+Camera.fy: 600.0
+Camera.cx: 599.5
+Camera.cy: 339.5
+
+Camera.k1: 0.00023840576144970707
+Camera.k2: -0.00031479749960004814
+Camera.k3: 0.0
+Camera.p1: -7.392305313239943e-05
+Camera.p2: -2.771600122416197e-05
+
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -5
+Viewer.ViewpointZ: -10
+Viewer.ViewpointF: 500
+
+Camera.width: 1200
+Camera.height: 680
+
+# Camera frame rate (frames per second)
+Camera.fps: 30.0
+
+# IR projector baseline times fx (approximation, in pixels)
+Camera.bf: 45.0
+
+# Color order of the images (0: BGR, 1: RGB)
+Camera.RGB: 1
+
+#--------------------------------------------------------------------------------------------
+# Depth Parameters
+#--------------------------------------------------------------------------------------------
+
+# Close/Far threshold for depth values (in meters)
+ThDepth: 50.0
+
+# Depth map factor to convert depth values to meters (e.g., 5000 for TUM, 6553.5 for Replica)
+DepthMapFactor: 6553.5
+
+#--------------------------------------------------------------------------------------------
+# ORB Feature Parameters
+#--------------------------------------------------------------------------------------------
+
+# Number of features per image
+ORBextractor.nFeatures: 1000
+
+# Scale factor between levels in the scale pyramid
+ORBextractor.scaleFactor: 1.2
+
+# Number of levels in the scale pyramid
+ORBextractor.nLevels: 8
+
+# FAST threshold for ORB feature detection
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
